@@ -43,6 +43,28 @@ type DisplayProject = ProjectTrackRecord & {
   googleMapsQuery?: string;
 };
 
+const allowedRoleTypes = [
+  'Land Identification & Acquisition',
+  'Land-Related Work',
+  'Land Deal',
+  'Plotting & Land Work',
+  'Development',
+  'Land Sourcing',
+] as const;
+
+const getValidRoleType = (
+  roleType: string | null
+): DisplayProject['roleType'] => {
+  if (
+    roleType &&
+    (allowedRoleTypes as readonly string[]).includes(roleType)
+  ) {
+    return roleType as DisplayProject['roleType'];
+  }
+
+  return 'Land-Related Work';
+};
+
 const convertProject = (item: SupabaseProject): DisplayProject => {
   return {
     id: item.id,
@@ -57,8 +79,7 @@ const convertProject = (item: SupabaseProject): DisplayProject => {
     yearOrPeriod:
       item.year_or_period || 'Historical Project',
 
-    roleType:
-      item.role_type || 'Land-Related Work',
+    roleType: getValidRoleType(item.role_type),
 
     roleDescription:
       item.role_description ||
@@ -111,9 +132,11 @@ export const ProjectsPage: React.FC = () => {
 
       if (error) {
         console.error('Error fetching projects:', error);
+
         setError(
           'We could not load projects right now. Please try again later.'
         );
+
         setProjects([]);
         setLoading(false);
         return;
@@ -140,7 +163,10 @@ export const ProjectsPage: React.FC = () => {
     );
   };
 
-  const renderProjectCard = (proj: DisplayProject, mobile = false) => {
+  const renderProjectCard = (
+    proj: DisplayProject,
+    mobile = false
+  ) => {
     if (mobile) {
       return (
         <div
