@@ -7,8 +7,6 @@ export interface Property {
   categoryLabel: string;
   landArea?: string;
   landAreaDetails?: string;
-  ownershipDetailsInternal?: string; // Internal, not displayed publicly unless permitted
-  transferDetailsInternal?: string;  // Internal, e.g. "Company Transfer"
   highlight: string;
   description: string;
   potentialApplications?: string[];

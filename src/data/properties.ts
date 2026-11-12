@@ -10,7 +10,7 @@ export const propertiesData: Property[] = [
     categoryLabel: "Scenic Mountain Land",
     landArea: "90 Nali",
     landAreaDetails: "Approximately 4.5 Acres (90 Nali)",
-    ownershipDetailsInternal: "Single Owner",
+
     highlight: "Expansive high-altitude parcel in one of Kumaon's most serene and peaceful hamlets.",
     description: "A rare, substantial land holding of 90 Nali situated in Sheetla near Mukteshwar, celebrated for its pure Himalayan air, ancient oak and rhododendron groves, and panoramic views of the Trishul and Nanda Devi peaks. Ideal for an exclusive private estate, bespoke orchard retreat, or low-density luxury mountain living.",
     potentialApplications: [
@@ -36,7 +36,7 @@ export const propertiesData: Property[] = [
     categoryLabel: "High-Potential Land Parcel",
     landArea: "100 Nali",
     landAreaDetails: "Approximately 5.0 Acres (100 Nali)",
-    transferDetailsInternal: "Company Transfer",
+
     highlight: "Generous 100 Nali mountain parcel situated in the scenic Machkhali corridor near Ranikhet golf course.",
     description: "Strategically located in Machkhali (Majkhali), famed for rolling green meadows, unobstructed views of the snow-clad western Himalayan range, and proximity to Ranikhet's historic Upat Golf Course. An exceptional acquisition for institutional investors or premium estate developers seeking contiguous acreage.",
     potentialApplications: [
@@ -62,7 +62,7 @@ export const propertiesData: Property[] = [
     categoryLabel: "Scenic Hill Land",
     landArea: "70 Nali",
     landAreaDetails: "Approximately 3.5 Acres (70 Nali)",
-    transferDetailsInternal: "Company Transfer",
+
     highlight: "70 Nali hillside parcel in Kausani, famed for unobstructed 300-km Himalayan snow-peak vistas.",
     description: "Located in Kausani, widely celebrated as the Switzerland of India for its dramatic 300-kilometer panoramic view of Himalayan peaks including Trishul, Nanda Devi, and Panchachuli. This 70 Nali parcel provides a privileged vantage point ideal for high-end tourism, boutique hospitality, or luxury mountain residences.",
     potentialApplications: [
@@ -88,7 +88,7 @@ export const propertiesData: Property[] = [
     categoryLabel: "High-Visibility Land Holding",
     landArea: "100 Nali",
     landAreaDetails: "Approximately 5.0 Acres (100 Nali)",
-    ownershipDetailsInternal: "Two Partners",
+
     highlight: "Substantial 100 Nali parcel situated in the vicinity of the renowned Neem Karoli Baba Ashram at Kainchi Dham.",
     description: "Positioned close to the internationally revered spiritual destination of Kainchi Dham in the peaceful Kshipra valley corridor. Boasting strong highway accessibility and high year-round visitor footfall, this substantial 100 Nali property offers outstanding potential for hospitality, wellness, or residential development.",
     potentialApplications: [
