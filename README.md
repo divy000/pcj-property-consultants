@@ -5,7 +5,7 @@ A modern, responsive, full-stack real estate consultancy website developed for *
 **Live Website:** https://pcj-property-consultants.pages.dev
 
 **Project Type:** Real-World Client Project  
-**Developer:** Divyansh Singh Parihar  
+**Developer:** Divyanshu Singh Parihar  
 **Role:** Independent Full-Stack Developer
 
 ---
@@ -208,7 +208,7 @@ Production updates are deployed through the GitHub integration whenever changes 
 
 ## Project Development and Contributions
 
-**Developer:** Divyansh Singh Parihar
+**Developer:** Divyanshu Singh Parihar
 
 **Role:** Independent Full-Stack Developer
 
